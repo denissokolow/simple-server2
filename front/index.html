@@ -16,14 +16,14 @@
             $('#sum').on('click', async e => {
                         let n1 = $('#first').val();
                         let n2 = $('#second').val();
-                        const result = await fetch(`http://localhost:4321/sum?n1=${n1}&n2=${n2}`)
+                        const result = await fetch(`https://thawing-ravine-40686.herokuapp.com/sum?n1=${n1}&n2=${n2}`)
                             .then(x => x.text());
                         $('#result').text(result);
                     });
             $('#mul').on('click', async e => {
                         let n1 = $('#first').val();
                         let n2 = $('#second').val();
-                        const result = await fetch(`http://localhost:4321/mul?n1=${n1}&n2=${n2}`)
+                        const result = await fetch(`https://thawing-ravine-40686.herokuapp.com/mul?n1=${n1}&n2=${n2}`)
                             .then(x => x.text());
                         $('#result').text(result);
                     });
